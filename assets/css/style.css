@@ -1,0 +1,764 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffb900;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.content {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.btn {
+    min-height: 50px;
+    display: inline-block;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* Header */
+
+.header-sticky {
+    background: #fffcf4;
+    position: sticky;
+    top: -24px;
+    z-index: 1;
+}
+
+.header-sticky .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0 12px;
+}
+
+.header-sticky .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+.header-sticky .nav-list li a {
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.header-sticky .nav-list li a:hover {
+    opacity: 0.8;
+}
+
+.header-sticky .nav-bar .btn-signup {
+    display: inline-block;
+    padding: 11px 41px;
+    color: #fff;
+    background: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    text-align: center;
+    border-radius: 25px;
+}
+
+/* Hero */
+.hero {
+    background: #fffcf4;
+    height: 802px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 52px;
+}
+
+.hero .image {
+    width: 48.7%;
+    position: relative;
+}
+.hero .card {
+    width: 270px;
+    height: 244px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px 0px #0000000d;
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+    padding: 24px 58px 24px 24px;
+}
+
+.hero .card .course {
+    display: flex;
+}
+
+.hero .card .course:nth-child(2) {
+    margin: 8px 0;
+}
+
+.hero .card .course img {
+    margin-right: 16px;
+}
+
+.hero .card .number-course {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.hero .card .name-course {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #171100;
+}
+.hero .intro {
+    width: 40%;
+}
+
+.hero .intro .title {
+    font-family: "Sen", sans-serif;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    margin-bottom: 22px;
+    color: #171100;
+}
+
+.hero .intro .desc {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 38px;
+    color: #5f5b53;
+}
+
+.hero .intro .see-courses-btn {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.7;
+    text-align: center;
+    padding: 17px 33px 17px 34px;
+    background-color: var(--primary-color);
+    border-radius: 32px;
+    color: #fff;
+    margin-right: 28px;
+}
+
+.hero .intro .see-watch {
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.hero .intro .watch-courses {
+    display: flex;
+}
+
+.hero .intro .watch-courses {
+    display: flex;
+    align-items: center;
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.hero .intro .watch-course-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px 0px #00000012;
+    margin-right: 14px;
+}
+
+.hero .intro .sub-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 8px;
+    color: #5f5b53;
+}
+
+.hero .intro .engage {
+    display: flex;
+}
+
+.hero .intro .engage .data {
+    display: flex;
+    margin-right: 28px;
+    align-items: baseline;
+}
+
+.hero .intro .engage .qty {
+    font-family: "Sen", sans-serif;
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.23;
+    margin-right: 12px;
+    color: #171100;
+}
+
+.hero .intro .engage .unit {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5f5b53;
+}
+
+/* Pr-course */
+
+.pr-course {
+    margin: 200px 0;
+}
+
+.pr-course .block-course .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.pr-course .active-btn {
+    margin-left: 14px;
+}
+
+.pr-course .intro .title {
+    font-family: "Sen", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+    margin-bottom: 16px;
+}
+
+.pr-course .intro .desc {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #5f5b53;
+    width: 458px;
+}
+
+.pr-course .list-course {
+    display: flex;
+    gap: 30px;
+}
+.pr-course .list-course .item-course {
+    display: block;
+    width: 370px;
+    height: 466px;
+    border-radius: 12px;
+    border: 1px solid #e2dfda;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.pr-course .list-course .item-course:hover {
+    border: 1px solid #fff;
+    box-shadow: 0px 18px 36px 0px #0000000d;
+    transform: translateY(-4px);
+}
+
+.pr-course .list-course .course-img {
+    width: 370px;
+    height: 278px;
+    object-fit: cover;
+}
+
+.pr-course .list-course .name-n-rate {
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pr-course .list-course .name-n-rate .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #171100;
+}
+
+.pr-course .list-course .name-n-rate .rate span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #fea31b;
+}
+
+.pr-course .list-course .desc {
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #5f5b53;
+}
+
+.pr-course .price-n-book {
+    margin-left: 22px;
+    margin-right: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pr-course .price-n-book .price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #171100;
+}
+
+.pr-course .price-n-book .btn-book {
+    color: #fff;
+    border-radius: 25px;
+    background: #171100;
+    padding: 12px 24px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86;
+}
+
+.pr-course .price-n-book .btn-book:hover {
+    background-color: var(--primary-color);
+}
+
+/* Testimonial */
+
+.testimonial {
+    background-color: #2e2100;
+    padding: 96px 0;
+}
+
+.testimonial .feed-back {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.testimonial .student .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    background: no-repeat url(../image/avatar-student.png) 55% 20% / 170px 255px;
+    /* Tuy nhiên người ta thường dùng thẻ img
+        và dùng object-fit, object-position 
+        (vì người dùng thay đổi avatar nên chỉ dùng mang tính tương đối)
+     */
+}
+
+.testimonial .student .name {
+    font-family: "Sen", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42;
+    color: #f7f7f7;
+    margin-bottom: 4px;
+}
+
+.testimonial .student .desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    margin-bottom: 28px;
+    color: #bfbcb2;
+}
+
+.testimonial .student .slides {
+    display: flex;
+    gap: 6px;
+}
+
+.testimonial .student .slides .dot-slide {
+    width: 6px;
+    height: 6px;
+    background-color: #634700;
+    border-radius: 50%;
+}
+
+.testimonial .student .slides .dot-slide:nth-child(2) {
+    background-color: var(--primary-color);
+}
+
+.testimonial .stu-word {
+    width: 770px;
+    position: relative;
+}
+
+.testimonial .stu-word p {
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.54;
+    color: #ffffff;
+    padding-top: 28px;
+    padding-left: 30px;
+}
+
+.testimonial .stu-word img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Features */
+
+.feature-content {
+    margin: 200px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature .feature-img {
+    display: flex;
+    width: 570px;
+    height: 438px;
+    justify-content: space-between;
+}
+
+.feature .feature-img .img-left {
+    width: 270px;
+    height: 404px;
+    align-self: flex-end;
+    object-fit: cover;
+    border-radius: 16px;
+    -webkit-filter: contrast(90%);
+    filter: contrast(90%);
+}
+
+.feature .feature-img .img-right {
+    width: 270px;
+    height: 404px;
+    align-self: flex-start;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.feature .feature-info {
+    width: 470px;
+}
+
+.feature .feature-info .title {
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.27;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.feature .feature-info .desc {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #5f5b53;
+    margin: 16px 0;
+}
+
+.feature .feature-info .signup-btn {
+    background-color: var(--primary-color);
+    padding: 11px 37px;
+    border-radius: 26px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-top: 16px;
+}
+
+/* CTA */
+
+.cta .cta-intro {
+    width: 570px;
+}
+
+.cta img {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cta .title {
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.27;
+    letter-spacing: -0.02em;
+    color: #171100;
+    margin-bottom: 16px;
+}
+
+.cta .desc {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #5f5b53;
+    margin-bottom: 32px;
+}
+
+.cta .cta-btn {
+    padding: 12px 32px 10px 31px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    background-color: var(--primary-color);
+    border-radius: 26px;
+}
+
+/* Blog */
+.blog {
+    background-color: #fffcf4;
+}
+
+.blog .content {
+    padding: 96px 0;
+}
+
+.blog .title {
+    font-family: "Sen", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.27;
+    letter-spacing: -0.02em;
+    color: #130606;
+    width: 154px;
+    height: 48px;
+    margin: 0 auto 16px;
+}
+
+.blog .desc {
+    width: 448px;
+    height: 56px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    text-align: center;
+    color: #696262;
+    margin: 0 auto 55px;
+}
+
+.blog .blog-list {
+    display: flex;
+}
+
+.blog .blog-item {
+    width: 370px;
+    height: 467px;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog .blog-item:nth-child(2) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog .blog-item:hover {
+    box-shadow: 0px 16px 32px 0px #0000000d;
+    transform: translateY(-2px);
+}
+
+.blog .blog-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.blog .blog-item .container {
+    padding: 20px 20px 28px;
+}
+
+.blog .blog-item .blog-data {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    color: #5f5b53;
+    display: flex;
+    align-items: center;
+}
+
+.blog .blog-item .blog-data::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffb900;
+    margin-right: 4px;
+}
+
+.blog .blog-item .separate {
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    margin: 12px 0;
+    background: #e2dfda;
+}
+
+.blog .blog-item .sub-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #171100;
+    margin-bottom: 12px;
+}
+
+.blog .blog-item .blog-btn {
+    background-color: #171100;
+    padding: 12px 21px;
+    border-radius: 25px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86;
+}
+
+.blog .blog-item .blog-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.blog .slide {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.blog .slide .dot {
+    width: 6px;
+    height: 6px;
+    background: #5f5b53;
+    border-radius: 50%;
+}
+
+.blog .slide .dot:nth-child(2) {
+    background-color: var(--primary-color);
+}
+
+/* Contact */
+.contact {
+    background-color: #2e2100;
+    padding-top: 96px;
+}
+
+.contact .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact .lesson {
+    width: 267px;
+    margin-right: 145px;
+}
+
+.contact .lesson .desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    color: #bfbcb2;
+    margin: 18px 0;
+}
+
+.contact .lesson .list-social {
+    display: flex;
+    gap: 18px;
+}
+.contact .support {
+    margin: 0 130px;
+}
+
+.contact .address {
+    width: 231px;
+}
+
+.contact .title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #fff;
+}
+
+.contact .title::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+    margin: 16px 0 28px;
+}
+
+.contact .contact-item {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    color: #bfbcb2;
+    margin: 12px 0;
+}
+
+.contact .contact-item b {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86;
+    color: #fff;
+    margin: 12px 0;
+}
+
+.contact .separate {
+    margin-top: 22px;
+    width: 1170px;
+    height: 1px;
+    background: #59554b;
+}
+
+.contact .copyright {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    color: #807d74;
+    padding: 28px 0;
+}
