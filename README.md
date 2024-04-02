@@ -1,4 +1,4 @@
-# LANDING PAGE
+# LEARNING COURSE 01
 From F8 course
 
 Những thiếu sót còn lưu ý:
